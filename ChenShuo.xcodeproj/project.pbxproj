@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21AF68133F1796B11D3CCF2 /* libPods-ChenShuo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D82D3DC46A8754AD6B4760E /* libPods-ChenShuo.a */; };
+		CB0052032268269200804B60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0052022268269200804B60 /* AppDelegate.m */; };
+		CB00520B2268269300804B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB00520A2268269300804B60 /* Assets.xcassets */; };
+		CB0052112268269300804B60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0052102268269300804B60 /* main.m */; };
+		CB00521B2268269300804B60 /* ChenShuoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00521A2268269300804B60 /* ChenShuoTests.m */; };
+		CB0052262268269300804B60 /* ChenShuoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0052252268269300804B60 /* ChenShuoUITests.m */; };
+		CB00523F226848F400804B60 /* LLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00523D226848F400804B60 /* LLTabBarItem.m */; };
+		CB005240226848F400804B60 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00523E226848F400804B60 /* LLTabBar.m */; };
+		CB005242226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png in Resources */ = {isa = PBXBuildFile; fileRef = CB005241226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png */; };
+		CB00524522684A2800804B60 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524422684A2800804B60 /* MainViewController.m */; };
+		CB00524822684A3600804B60 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524722684A3600804B60 /* MineViewController.m */; };
+		CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB0052172268269300804B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0051F62268269200804B60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0051FD2268269200804B60;
+			remoteInfo = ChenShuo;
+		};
+		CB0052222268269300804B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0051F62268269200804B60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0051FD2268269200804B60;
+			remoteInfo = ChenShuo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D82D3DC46A8754AD6B4760E /* libPods-ChenShuo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChenShuo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26844B3FF14FAE7B80B16FD1 /* libPods-ChenShuoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChenShuoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		892AD0DDE3E77CEE039E8D53 /* libPods-ChenShuoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChenShuoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC80F2B6C5A6B2E16C01AEFF /* Pods-ChenShuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0051FE2268269200804B60 /* ChenShuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChenShuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0052012268269200804B60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB0052022268269200804B60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB00520A2268269300804B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB00520F2268269300804B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0052102268269300804B60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB0052162268269300804B60 /* ChenShuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChenShuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB00521A2268269300804B60 /* ChenShuoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChenShuoTests.m; sourceTree = "<group>"; };
+		CB00521C2268269300804B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0052212268269300804B60 /* ChenShuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChenShuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0052252268269300804B60 /* ChenShuoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChenShuoUITests.m; sourceTree = "<group>"; };
+		CB0052272268269300804B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB00523B226848F400804B60 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
+		CB00523C226848F400804B60 /* LLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarItem.h; sourceTree = "<group>"; };
+		CB00523D226848F400804B60 /* LLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarItem.m; sourceTree = "<group>"; };
+		CB00523E226848F400804B60 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
+		CB005241226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2019-04-18 13.58.34.png"; sourceTree = "<group>"; };
+		CB00524322684A2800804B60 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CB00524422684A2800804B60 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CB00524622684A3600804B60 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		CB00524722684A3600804B60 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		CB00524C22684D7D00804B60 /* AppDelegate+Chen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Chen.h"; sourceTree = "<group>"; };
+		CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Chen.m"; sourceTree = "<group>"; };
+		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB0051FB2268269200804B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21AF68133F1796B11D3CCF2 /* libPods-ChenShuo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0052132268269300804B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB00521E2268269300804B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB0051F52268269200804B60 = {
+			isa = PBXGroup;
+			children = (
+				CB0052002268269200804B60 /* ChenShuo */,
+				CB0052352268281700804B60 /* Classes */,
+				CB0052362268283200804B60 /* Resources */,
+				CB0052392268485900804B60 /* ThirdLibrary */,
+				CB0052192268269300804B60 /* ChenShuoTests */,
+				CB0052242268269300804B60 /* ChenShuoUITests */,
+				CB0051FF2268269200804B60 /* Products */,
+				F95547309544924244B24663 /* Pods */,
+				FB9678DF2903585DBB96C7A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB0051FF2268269200804B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB0051FE2268269200804B60 /* ChenShuo.app */,
+				CB0052162268269300804B60 /* ChenShuoTests.xctest */,
+				CB0052212268269300804B60 /* ChenShuoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB0052002268269200804B60 /* ChenShuo */ = {
+			isa = PBXGroup;
+			children = (
+				CB0052012268269200804B60 /* AppDelegate.h */,
+				CB0052022268269200804B60 /* AppDelegate.m */,
+				CB00524C22684D7D00804B60 /* AppDelegate+Chen.h */,
+				CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */,
+				CB00520A2268269300804B60 /* Assets.xcassets */,
+				CB00520F2268269300804B60 /* Info.plist */,
+				CB0052102268269300804B60 /* main.m */,
+			);
+			path = ChenShuo;
+			sourceTree = "<group>";
+		};
+		CB0052192268269300804B60 /* ChenShuoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB00521A2268269300804B60 /* ChenShuoTests.m */,
+				CB00521C2268269300804B60 /* Info.plist */,
+			);
+			path = ChenShuoTests;
+			sourceTree = "<group>";
+		};
+		CB0052242268269300804B60 /* ChenShuoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB0052252268269300804B60 /* ChenShuoUITests.m */,
+				CB0052272268269300804B60 /* Info.plist */,
+			);
+			path = ChenShuoUITests;
+			sourceTree = "<group>";
+		};
+		CB0052352268281700804B60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB0052372268289300804B60 /* 首页 */,
+				CB005238226828BF00804B60 /* 我的 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB0052362268283200804B60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB0052372268289300804B60 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CB00524322684A2800804B60 /* MainViewController.h */,
+				CB00524422684A2800804B60 /* MainViewController.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		CB005238226828BF00804B60 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				CB00524622684A3600804B60 /* MineViewController.h */,
+				CB00524722684A3600804B60 /* MineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		CB0052392268485900804B60 /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				CB00523A226848F400804B60 /* LLTabBar */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		CB00523A226848F400804B60 /* LLTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CB005241226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png */,
+				CB00523B226848F400804B60 /* LLTabBar.h */,
+				CB00523C226848F400804B60 /* LLTabBarItem.h */,
+				CB00523D226848F400804B60 /* LLTabBarItem.m */,
+				CB00523E226848F400804B60 /* LLTabBar.m */,
+			);
+			path = LLTabBar;
+			sourceTree = "<group>";
+		};
+		F95547309544924244B24663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC80F2B6C5A6B2E16C01AEFF /* Pods-ChenShuo.debug.xcconfig */,
+				FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB9678DF2903585DBB96C7A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D82D3DC46A8754AD6B4760E /* libPods-ChenShuo.a */,
+				892AD0DDE3E77CEE039E8D53 /* libPods-ChenShuoTests.a */,
+				26844B3FF14FAE7B80B16FD1 /* libPods-ChenShuoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB0051FD2268269200804B60 /* ChenShuo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB00522A2268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuo" */;
+			buildPhases = (
+				DD34941D5098ED7B51883817 /* [CP] Check Pods Manifest.lock */,
+				CB0051FA2268269200804B60 /* Sources */,
+				CB0051FB2268269200804B60 /* Frameworks */,
+				CB0051FC2268269200804B60 /* Resources */,
+				9309D2D83AD706E5A9085584 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChenShuo;
+			productName = ChenShuo;
+			productReference = CB0051FE2268269200804B60 /* ChenShuo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB0052152268269300804B60 /* ChenShuoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB00522D2268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuoTests" */;
+			buildPhases = (
+				CB0052122268269300804B60 /* Sources */,
+				CB0052132268269300804B60 /* Frameworks */,
+				CB0052142268269300804B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0052182268269300804B60 /* PBXTargetDependency */,
+			);
+			name = ChenShuoTests;
+			productName = ChenShuoTests;
+			productReference = CB0052162268269300804B60 /* ChenShuoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB0052202268269300804B60 /* ChenShuoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0052302268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuoUITests" */;
+			buildPhases = (
+				CB00521D2268269300804B60 /* Sources */,
+				CB00521E2268269300804B60 /* Frameworks */,
+				CB00521F2268269300804B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0052232268269300804B60 /* PBXTargetDependency */,
+			);
+			name = ChenShuoUITests;
+			productName = ChenShuoUITests;
+			productReference = CB0052212268269300804B60 /* ChenShuoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB0051F62268269200804B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ChenShuo;
+				TargetAttributes = {
+					CB0051FD2268269200804B60 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CB0052152268269300804B60 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CB0051FD2268269200804B60;
+					};
+					CB0052202268269300804B60 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CB0051FD2268269200804B60;
+					};
+				};
+			};
+			buildConfigurationList = CB0051F92268269200804B60 /* Build configuration list for PBXProject "ChenShuo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB0051F52268269200804B60;
+			productRefGroup = CB0051FF2268269200804B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB0051FD2268269200804B60 /* ChenShuo */,
+				CB0052152268269300804B60 /* ChenShuoTests */,
+				CB0052202268269300804B60 /* ChenShuoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB0051FC2268269200804B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB005242226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png in Resources */,
+				CB00520B2268269300804B60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0052142268269300804B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB00521F2268269300804B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9309D2D83AD706E5A9085584 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD34941D5098ED7B51883817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChenShuo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB0051FA2268269200804B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0052112268269300804B60 /* main.m in Sources */,
+				CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */,
+				CB005240226848F400804B60 /* LLTabBar.m in Sources */,
+				CB00523F226848F400804B60 /* LLTabBarItem.m in Sources */,
+				CB00524822684A3600804B60 /* MineViewController.m in Sources */,
+				CB00524522684A2800804B60 /* MainViewController.m in Sources */,
+				CB0052032268269200804B60 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0052122268269300804B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB00521B2268269300804B60 /* ChenShuoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB00521D2268269300804B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0052262268269300804B60 /* ChenShuoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB0052182268269300804B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0051FD2268269200804B60 /* ChenShuo */;
+			targetProxy = CB0052172268269300804B60 /* PBXContainerItemProxy */;
+		};
+		CB0052232268269300804B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0051FD2268269200804B60 /* ChenShuo */;
+			targetProxy = CB0052222268269300804B60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB0052282268269300804B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB0052292268269300804B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB00522B2268269300804B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC80F2B6C5A6B2E16C01AEFF /* Pods-ChenShuo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CB00522C2268269300804B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CB00522E2268269300804B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChenShuo.app/ChenShuo";
+			};
+			name = Debug;
+		};
+		CB00522F2268269300804B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChenShuo.app/ChenShuo";
+			};
+			name = Release;
+		};
+		CB0052312268269300804B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChenShuo;
+			};
+			name = Debug;
+		};
+		CB0052322268269300804B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = ChenShuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChenShuo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB0051F92268269200804B60 /* Build configuration list for PBXProject "ChenShuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0052282268269300804B60 /* Debug */,
+				CB0052292268269300804B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB00522A2268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB00522B2268269300804B60 /* Debug */,
+				CB00522C2268269300804B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB00522D2268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB00522E2268269300804B60 /* Debug */,
+				CB00522F2268269300804B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0052302268269300804B60 /* Build configuration list for PBXNativeTarget "ChenShuoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0052312268269300804B60 /* Debug */,
+				CB0052322268269300804B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB0051F62268269200804B60 /* Project object */;
+}
