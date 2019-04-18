@@ -1,0 +1,17 @@
+
+#ifndef Header_pch
+#define Header_pch
+
+
+
+
+
+#define getRectNavAndStatusHight  self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
+
+
+
+
+
+
+
+#endif /* Header_pch */

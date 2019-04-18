@@ -66,6 +66,7 @@
 		CB00524722684A3600804B60 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		CB00524C22684D7D00804B60 /* AppDelegate+Chen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Chen.h"; sourceTree = "<group>"; };
 		CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Chen.m"; sourceTree = "<group>"; };
+		CB00524F2268720900804B60 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
 		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +130,7 @@
 				CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */,
 				CB00520A2268269300804B60 /* Assets.xcassets */,
 				CB00520F2268269300804B60 /* Info.plist */,
+				CB00524F2268720900804B60 /* Header.pch */,
 				CB0052102268269300804B60 /* main.m */,
 			);
 			path = ChenShuo;
@@ -199,9 +201,9 @@
 			children = (
 				CB005241226849BE00804B60 /* 屏幕快照 2019-04-18 13.58.34.png */,
 				CB00523B226848F400804B60 /* LLTabBar.h */,
+				CB00523E226848F400804B60 /* LLTabBar.m */,
 				CB00523C226848F400804B60 /* LLTabBarItem.h */,
 				CB00523D226848F400804B60 /* LLTabBarItem.m */,
-				CB00523E226848F400804B60 /* LLTabBar.m */,
 			);
 			path = LLTabBar;
 			sourceTree = "<group>";
@@ -480,6 +482,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ChenShuo/Header.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -537,6 +541,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ChenShuo/Header.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

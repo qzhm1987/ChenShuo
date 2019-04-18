@@ -19,12 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    
-  //  [self goMainWindowRootController];
     [self commonTabBarRootController];
-    
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

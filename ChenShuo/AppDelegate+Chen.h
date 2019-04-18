@@ -7,13 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "LLTabBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppDelegate (Chen)
+@interface AppDelegate (Chen)<LLTabBarDelegate>
 
 -(void)goMainWindowRootController;
 -(void)commonTabBarRootController;
+-(void)AddButtonTabBarRootController;
 @end
 
 NS_ASSUME_NONNULL_END
