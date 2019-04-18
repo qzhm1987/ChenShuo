@@ -19,6 +19,8 @@
 		CB00524522684A2800804B60 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524422684A2800804B60 /* MainViewController.m */; };
 		CB00524822684A3600804B60 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524722684A3600804B60 /* MineViewController.m */; };
 		CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */; };
+		CB00525322687A9B00804B60 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00525122687A9B00804B60 /* HTTPManager.m */; };
+		CB00525922687B7B00804B60 /* ShareUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00525822687B7B00804B60 /* ShareUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		CB00524C22684D7D00804B60 /* AppDelegate+Chen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Chen.h"; sourceTree = "<group>"; };
 		CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Chen.m"; sourceTree = "<group>"; };
 		CB00524F2268720900804B60 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		CB00525122687A9B00804B60 /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		CB00525222687A9B00804B60 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		CB00525722687B7B00804B60 /* ShareUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareUser.h; sourceTree = "<group>"; };
+		CB00525822687B7B00804B60 /* ShareUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareUser.m; sourceTree = "<group>"; };
 		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +163,7 @@
 		CB0052352268281700804B60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB00525022687A8B00804B60 /* Model */,
 				CB0052372268289300804B60 /* 首页 */,
 				CB005238226828BF00804B60 /* 我的 */,
 			);
@@ -206,6 +213,17 @@
 				CB00523D226848F400804B60 /* LLTabBarItem.m */,
 			);
 			path = LLTabBar;
+			sourceTree = "<group>";
+		};
+		CB00525022687A8B00804B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB00525222687A9B00804B60 /* HTTPManager.h */,
+				CB00525122687A9B00804B60 /* HTTPManager.m */,
+				CB00525722687B7B00804B60 /* ShareUser.h */,
+				CB00525822687B7B00804B60 /* ShareUser.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F95547309544924244B24663 /* Pods */ = {
@@ -400,8 +418,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0052112268269300804B60 /* main.m in Sources */,
+				CB00525922687B7B00804B60 /* ShareUser.m in Sources */,
 				CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */,
 				CB005240226848F400804B60 /* LLTabBar.m in Sources */,
+				CB00525322687A9B00804B60 /* HTTPManager.m in Sources */,
 				CB00523F226848F400804B60 /* LLTabBarItem.m in Sources */,
 				CB00524822684A3600804B60 /* MineViewController.m in Sources */,
 				CB00524522684A2800804B60 /* MainViewController.m in Sources */,
