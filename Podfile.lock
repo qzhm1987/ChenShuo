@@ -19,6 +19,7 @@ PODS:
     - AMapFoundation-NO-IDFA (~> 1.4)
   - AMapSearch-NO-IDFA (6.6.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
+  - AVOSCloud (11.6.0)
   - IQKeyboardManager (6.0.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - AMapLocation-NO-IDFA
   - AMapSearch-NO-IDFA
+  - AVOSCloud
   - IQKeyboardManager (~> 6.0.4)
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
@@ -51,6 +53,7 @@ SPEC REPOS:
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
     - AMapSearch-NO-IDFA
+    - AVOSCloud
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
@@ -65,6 +68,7 @@ SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: 40d723b352992d0f95abe2976f0c0ecda3c3ffc3
   AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
   AMapSearch-NO-IDFA: 07651afae010f7acda12beb1f2c0f45d29069e75
+  AVOSCloud: 0c12fde835ceb0aae5c1dede31e8cfabbf3c5c7c
   IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -74,6 +78,6 @@ SPEC CHECKSUMS:
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: b6d122989c7ea57d6b7876f389b1d42ff49255b8
+PODFILE CHECKSUM: 3f0a040b585c9a161a4fb13690b8ea7237db6660
 
 COCOAPODS: 1.5.0

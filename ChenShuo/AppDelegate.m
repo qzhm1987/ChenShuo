@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Chen.h"
-
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [AVOSCloud setApplicationId:@"oBtYncNyvFplGWHsLjEQd9Cz-gzGzoHsz" clientKey:@"MBR4JByGHiyPss3e0AXHanXq"];
+    
+    [AVOSCloud setAllLogsEnabled:NO];
+
+    
     [self commonTabBarRootController];
     [self.window makeKeyAndVisible];
     return YES;
