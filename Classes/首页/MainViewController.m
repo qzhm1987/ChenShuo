@@ -10,7 +10,7 @@
 
 
 @interface MainViewController ()
-
+@property (strong, nonatomic)UIScrollView *scrollView;
 @end
 
 @implementation MainViewController
@@ -18,21 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.hidden = YES;
     self.navigationItem.title = @"首页";
+    [self addMainUI];
     
-    AVUser *user = [AVUser user];
-    user.username = @"Tom";
-    user.password =  @"12345678";
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        // 获取 RESTAPI 返回的错误信息详情（SDK 11.0.0 及以上的版本适用）
-        if ([error.domain isEqualToString:kLeanCloudErrorDomain] && error.code == 202) {
-            NSString *errorMessage = error.localizedFailureReason;
-            if (errorMessage) {
-                // 处理错误信息
-                NSLog(@"error = %@",errorMessage);
-            }
-        }
-    }];
+    
     
     
     
@@ -44,6 +34,30 @@
     // Do any additional setup after loading the view.
 }
 
+
+-(void)addMainUI{
+    UIImageView *banner = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bg_banner"]];
+    [self.view addSubview:banner];
+    [banner mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(40);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(378/2.0f);
+    }];
+    
+    
+    
+    
+}
+
+
+-(UIScrollView *)scrollView{
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc]init];
+        _scrollView.showsHorizontalScrollIndicator= NO;
+        _scrollView.showsVerticalScrollIndicator= NO;
+    }
+    return _scrollView;
+}
 /*
 #pragma mark - Navigation
 

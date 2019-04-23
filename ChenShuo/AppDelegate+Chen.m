@@ -9,7 +9,8 @@
 #import "AppDelegate+Chen.h"
 
 
-#define Theme_Color [UIColor colorWithRed:0.0f/255.0 green:164.0f/255.0 blue:228.0f/255.0 alpha:1.0f]
+
+#define Theme_Color [UIColor colorWithRed:255.0f/255.0 green:67.0f/255.0 blue:108.0f/255.0 alpha:1.0f]
 
 @implementation AppDelegate (Chen)
 
@@ -34,41 +35,36 @@
     UINavigationController *mainNav =[[UINavigationController alloc]initWithRootViewController:main];
     UIViewController *second = [NSClassFromString(@"UIViewController") new];
     second.view.backgroundColor = [UIColor whiteColor];
-    second.navigationItem.title = @"推荐";
+    second.navigationItem.title = @"订单";
     UINavigationController *secondNav = [[UINavigationController alloc]initWithRootViewController:second];
     
-    UIViewController *third =[NSClassFromString(@"UIViewController") new];
-    third.view.backgroundColor = [UIColor whiteColor];
-    third.navigationItem.title = @"发现";
-    UINavigationController *thirdNav = [[UINavigationController alloc]initWithRootViewController:third];
+   
     
     
     UIViewController  *mine = [NSClassFromString(@"MineViewController") new];
     UINavigationController *mineNav  = [[UINavigationController alloc]initWithRootViewController:mine];
     mainNav.tabBarItem.title = @"首页";
-    secondNav.title = @"推荐";
-    thirdNav.tabBarItem.title = @"发现";
+    secondNav.title = @"订单";
     mineNav.tabBarItem.title = @"我的";
     
-    mainNav.tabBarItem.image = [UIImage imageNamed:@"home_normal"];
-    mainNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"home_highlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    mainNav.tabBarItem.image = [UIImage imageNamed:@"tab_home_nor"];
+    mainNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"tab_home_high"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    secondNav.tabBarItem.image = [UIImage imageNamed:@"mycity_normal"];
-    secondNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"mycity_highlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    thirdNav.tabBarItem.image = [UIImage imageNamed:@"message_normal"];
-    thirdNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"message_highlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    mineNav.tabBarItem.image = [UIImage imageNamed:@"account_normal"];
-    mineNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"account_highlight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    secondNav.tabBarItem.image = [UIImage imageNamed:@"tab_order_nor"];
+    secondNav.tabBarItem.selectedImage = [[UIImage imageNamed:@"tab_order_high"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    mineNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
+    mineNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"tab_me_high"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    tabBar.viewControllers = @[mainNav,secondNav,thirdNav,mineNav];
+    tabBar.viewControllers = @[mainNav,secondNav,mineNav];
     
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+  
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance]  setTranslucent:NO];
-    [[UINavigationBar appearance]  setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName :Theme_Color ,NSFontAttributeName : [UIFont systemFontOfSize:15.0]} forState:UIControlStateSelected];//TabBarItem选中时的字体颜色和大小
+    
+    
    self.window.rootViewController = tabBar;
 }
 

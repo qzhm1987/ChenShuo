@@ -4,6 +4,7 @@
 target 'ChenShuo' do
     pod 'AVOSCloud' #LeaniCloud
     pod 'AFNetworking', '~>3.1.0'
+    pod 'SDCycleScrollView', '~> 1.75'
     pod 'Masonry', '~> 1.1.0'
     pod 'MJRefresh', '~> 3.1.15.3'
     pod 'Toast', '~> 4.0.0'

@@ -21,10 +21,7 @@
     self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [AVOSCloud setApplicationId:@"oBtYncNyvFplGWHsLjEQd9Cz-gzGzoHsz" clientKey:@"MBR4JByGHiyPss3e0AXHanXq"];
-    
     [AVOSCloud setAllLogsEnabled:NO];
-
-    
     [self commonTabBarRootController];
     [self.window makeKeyAndVisible];
     return YES;
