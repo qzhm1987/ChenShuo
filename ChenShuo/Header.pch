@@ -7,10 +7,12 @@
 #import "AppDelegate.h"
 #import <AFNetworking.h>
 #import "Masonry.h"
+#import <YYModel.h>
 #import "UIView+Toast.h"
 #import <MJRefresh.h>
 #import "HTTPManager.h"
 #import "ShareUser.h"
+#import <FMDB.h>
 #endif
 
 
@@ -18,8 +20,11 @@
 
 #define getRectNavAndStatusHight  self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
 
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
+#define PIX (SCREEN_WIDTH/375.0f)
 
-
+#define KDoucumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
 
 

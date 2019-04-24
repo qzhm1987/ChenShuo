@@ -33,7 +33,7 @@
     UITabBarController *tabBar = [[UITabBarController alloc]init];
     UIViewController *main  = [NSClassFromString(@"MainViewController") new];
     UINavigationController *mainNav =[[UINavigationController alloc]initWithRootViewController:main];
-    UIViewController *second = [NSClassFromString(@"UIViewController") new];
+    UIViewController *second = [NSClassFromString(@"OrderViewController") new];
     second.view.backgroundColor = [UIColor whiteColor];
     second.navigationItem.title = @"订单";
     UINavigationController *secondNav = [[UINavigationController alloc]initWithRootViewController:second];
@@ -56,7 +56,7 @@
     mineNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
     mineNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"tab_me_high"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    tabBar.viewControllers = @[mainNav,secondNav,mineNav];
+    tabBar.viewControllers = @[mainNav,secondNav];
     
   
     [[UIApplication sharedApplication] setStatusBarHidden:NO];

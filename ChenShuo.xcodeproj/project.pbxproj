@@ -21,6 +21,10 @@
 		CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00524D22684D7D00804B60 /* AppDelegate+Chen.m */; };
 		CB00525322687A9B00804B60 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00525122687A9B00804B60 /* HTTPManager.m */; };
 		CB00525922687B7B00804B60 /* ShareUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB00525822687B7B00804B60 /* ShareUser.m */; };
+		CB4C1EE7226FFE560085E524 /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4C1EE6226FFE560085E524 /* OrderModel.m */; };
+		CB849882226EFD710031ED39 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849881226EFD710031ED39 /* CollectionViewCell.m */; };
+		CB849885226F0F650031ED39 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849884226F0F650031ED39 /* OrderViewController.m */; };
+		CB849889226F110A0031ED39 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849888226F110A0031ED39 /* TableViewCell.m */; };
 		CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD61B226D6441006014AC /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,14 @@
 		CB00525222687A9B00804B60 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
 		CB00525722687B7B00804B60 /* ShareUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareUser.h; sourceTree = "<group>"; };
 		CB00525822687B7B00804B60 /* ShareUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareUser.m; sourceTree = "<group>"; };
+		CB4C1EE5226FFE560085E524 /* OrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
+		CB4C1EE6226FFE560085E524 /* OrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
+		CB849880226EFD710031ED39 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		CB849881226EFD710031ED39 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		CB849883226F0F650031ED39 /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		CB849884226F0F650031ED39 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		CB849887226F110A0031ED39 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		CB849888226F110A0031ED39 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		CBAAD61A226D6441006014AC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CBAAD61B226D6441006014AC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,9 +178,11 @@
 		CB0052352268281700804B60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CBAAD619226D6210006014AC /* 登录注册 */,
 				CB00525022687A8B00804B60 /* Model */,
 				CB0052372268289300804B60 /* 首页 */,
+				CB849886226F0F6A0031ED39 /* 订单 */,
+				CB005238226828BF00804B60 /* 我的 */,
+				CBAAD619226D6210006014AC /* 登录注册 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -183,9 +197,12 @@
 		CB0052372268289300804B60 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				CB005238226828BF00804B60 /* 我的 */,
 				CB00524322684A2800804B60 /* MainViewController.h */,
 				CB00524422684A2800804B60 /* MainViewController.m */,
+				CB849880226EFD710031ED39 /* CollectionViewCell.h */,
+				CB849881226EFD710031ED39 /* CollectionViewCell.m */,
+				CB4C1EE5226FFE560085E524 /* OrderModel.h */,
+				CB4C1EE6226FFE560085E524 /* OrderModel.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -228,6 +245,17 @@
 				CB00525822687B7B00804B60 /* ShareUser.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CB849886226F0F6A0031ED39 /* 订单 */ = {
+			isa = PBXGroup;
+			children = (
+				CB849883226F0F650031ED39 /* OrderViewController.h */,
+				CB849884226F0F650031ED39 /* OrderViewController.m */,
+				CB849887226F110A0031ED39 /* TableViewCell.h */,
+				CB849888226F110A0031ED39 /* TableViewCell.m */,
+			);
+			path = "订单";
 			sourceTree = "<group>";
 		};
 		CBAAD619226D6210006014AC /* 登录注册 */ = {
@@ -438,9 +466,13 @@
 				CB005240226848F400804B60 /* LLTabBar.m in Sources */,
 				CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */,
 				CB00525322687A9B00804B60 /* HTTPManager.m in Sources */,
+				CB849889226F110A0031ED39 /* TableViewCell.m in Sources */,
 				CB00523F226848F400804B60 /* LLTabBarItem.m in Sources */,
+				CB849885226F0F650031ED39 /* OrderViewController.m in Sources */,
 				CB00524822684A3600804B60 /* MineViewController.m in Sources */,
+				CB4C1EE7226FFE560085E524 /* OrderModel.m in Sources */,
 				CB00524522684A2800804B60 /* MainViewController.m in Sources */,
+				CB849882226EFD710031ED39 /* CollectionViewCell.m in Sources */,
 				CB0052032268269200804B60 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,14 +632,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				DEVELOPMENT_TEAM = K4J4U676GU;
 				INFOPLIST_FILE = ChenShuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.KouHong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -620,14 +652,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				DEVELOPMENT_TEAM = K4J4U676GU;
 				INFOPLIST_FILE = ChenShuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.ChenShuo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChenShuo.KouHong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

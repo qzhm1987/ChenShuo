@@ -20,6 +20,9 @@ PODS:
   - AMapSearch-NO-IDFA (6.6.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
   - AVOSCloud (11.6.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.0.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
@@ -32,12 +35,14 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - Toast (4.0.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - AMapLocation-NO-IDFA
   - AMapSearch-NO-IDFA
   - AVOSCloud
+  - FMDB
   - IQKeyboardManager (~> 6.0.4)
   - Masonry (~> 1.1.0)
   - MBProgressHUD (~> 1.0.0)
@@ -46,6 +51,7 @@ DEPENDENCIES:
   - SDCycleScrollView (~> 1.75)
   - SDWebImage (~> 4.3.3)
   - Toast (~> 4.0.0)
+  - YYModel (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -54,6 +60,7 @@ SPEC REPOS:
     - AMapLocation-NO-IDFA
     - AMapSearch-NO-IDFA
     - AVOSCloud
+    - FMDB
     - IQKeyboardManager
     - Masonry
     - MBProgressHUD
@@ -62,6 +69,7 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - Toast
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -69,6 +77,7 @@ SPEC CHECKSUMS:
   AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
   AMapSearch-NO-IDFA: 07651afae010f7acda12beb1f2c0f45d29069e75
   AVOSCloud: 0c12fde835ceb0aae5c1dede31e8cfabbf3c5c7c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -77,7 +86,8 @@ SPEC CHECKSUMS:
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: dc66e9f0e0cf3c49bed8b27898ce564b9d5d7165
+PODFILE CHECKSUM: de0a5a8ff073eaa353b88b78c82fa09eef88ecc1
 
 COCOAPODS: 1.5.0
