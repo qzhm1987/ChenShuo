@@ -13,9 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (Chen)<LLTabBarDelegate>
 
+
+
 -(void)goMainWindowRootController;
 -(void)commonTabBarRootController;
 -(void)AddButtonTabBarRootController;
+-(void)showGuideScrollView;
 @end
 
 NS_ASSUME_NONNULL_END

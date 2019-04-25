@@ -5,6 +5,7 @@
 
 #ifdef __OBJC__
 #import "AppDelegate.h"
+#import "AppDelegate+Chen.h"
 #import <AFNetworking.h>
 #import "Masonry.h"
 #import <YYModel.h>
@@ -26,7 +27,7 @@
 
 #define KDoucumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-
-
+#define IMAGE_NAME(name)  [UIImage imageNamed:name]
+#define Theme_Color [UIColor colorWithRed:255.0f/255.0 green:67.0f/255.0 blue:108.0f/255.0 alpha:1.0f]
 
 #endif /* Header_pch */

@@ -22,7 +22,14 @@
     
     [AVOSCloud setApplicationId:@"oBtYncNyvFplGWHsLjEQd9Cz-gzGzoHsz" clientKey:@"MBR4JByGHiyPss3e0AXHanXq"];
     [AVOSCloud setAllLogsEnabled:NO];
-    [self commonTabBarRootController];
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *guide = [userDefault objectForKey:@"guide"];
+    if (guide) {
+        [self commonTabBarRootController];
+    }else{
+        [self showGuideScrollView];
+        
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,6 +60,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 
 @end

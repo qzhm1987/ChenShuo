@@ -26,6 +26,7 @@
 		CB849885226F0F650031ED39 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849884226F0F650031ED39 /* OrderViewController.m */; };
 		CB849889226F110A0031ED39 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849888226F110A0031ED39 /* TableViewCell.m */; };
 		CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD61B226D6441006014AC /* LoginViewController.m */; };
+		CBDD318722713C3100EC9D0B /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD318622713C3100EC9D0B /* GuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		CB849888226F110A0031ED39 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		CBAAD61A226D6441006014AC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CBAAD61B226D6441006014AC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CBDD318522713C3100EC9D0B /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		CBDD318622713C3100EC9D0B /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +206,8 @@
 				CB849881226EFD710031ED39 /* CollectionViewCell.m */,
 				CB4C1EE5226FFE560085E524 /* OrderModel.h */,
 				CB4C1EE6226FFE560085E524 /* OrderModel.m */,
+				CBDD318522713C3100EC9D0B /* GuideViewController.h */,
+				CBDD318622713C3100EC9D0B /* GuideViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 			files = (
 				CB0052112268269300804B60 /* main.m in Sources */,
 				CB00525922687B7B00804B60 /* ShareUser.m in Sources */,
+				CBDD318722713C3100EC9D0B /* GuideViewController.m in Sources */,
 				CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */,
 				CB005240226848F400804B60 /* LLTabBar.m in Sources */,
 				CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */,

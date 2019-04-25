@@ -10,12 +10,15 @@
 
 
 
-#define Theme_Color [UIColor colorWithRed:255.0f/255.0 green:67.0f/255.0 blue:108.0f/255.0 alpha:1.0f]
+
 
 @implementation AppDelegate (Chen)
 
 #pragma mark Public method
-
+-(void)showGuideScrollView{
+     UIViewController *guide = [NSClassFromString(@"GuideViewController") new];
+    self.window.rootViewController  = guide;
+}
 -(void)goMainWindowRootController{
     UIViewController *main = [NSClassFromString(@"MainViewController") new];
     UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:main];
@@ -56,7 +59,7 @@
     mineNav.tabBarItem.image = [UIImage imageNamed:@"tab_me_nor"];
     mineNav.tabBarItem.selectedImage =[[UIImage imageNamed:@"tab_me_high"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    tabBar.viewControllers = @[mainNav,secondNav];
+    tabBar.viewControllers = @[mainNav,secondNav,mineNav];
     
   
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
@@ -127,6 +130,7 @@
         return [[UIImage imageNamed:name] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
 }
+
 
 
 
