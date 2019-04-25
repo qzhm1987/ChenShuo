@@ -64,7 +64,7 @@
         lable.textColor = [UIColor lightGrayColor];
         [self.view addSubview:lable];
         [lable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.view).offset(120+i*80);
+            make.top.equalTo(self.view).offset(140+i*80);
             make.left.equalTo(self.view).offset(20);
             make.size.mas_equalTo(CGSizeMake(80, 30));
         }];
