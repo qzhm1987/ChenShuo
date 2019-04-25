@@ -9,7 +9,7 @@
 #import "GuideViewController.h"
 #import "AppDelegate.h"
 
-#define AppDel         ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
 @interface GuideViewController ()<UIScrollViewDelegate>
 
 @property (strong, nonatomic)NSArray *guideArray;

@@ -346,19 +346,29 @@
 }
 
 -(void)yuding:(UIButton *)button{
-    [self.bgView removeFromSuperview];
-    self.currentOrder.number = self.number;
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *phone = [userDefault objectForKey:@"phone"];
     
-    self.currentOrder.addTime =[self getCurrentTimeStringWithFormatter:@"yyyy-MM-dd HH:mm:ss"];
-    NSString *orderPath = [KDoucumentPath stringByAppendingString:@"orders.plist"];
-    NSMutableArray *orderArray = [NSMutableArray arrayWithCapacity:0];
-    NSArray *array = [NSArray arrayWithContentsOfFile:orderPath];
-    [orderArray addObjectsFromArray:array];
+    if (phone) {
+        [self.bgView removeFromSuperview];
+        self.currentOrder.number = self.number;
+        
+        self.currentOrder.addTime =[self getCurrentTimeStringWithFormatter:@"yyyy-MM-dd HH:mm:ss"];
+        NSString *orderPath = [KDoucumentPath stringByAppendingString:@"orders.plist"];
+        NSMutableArray *orderArray = [NSMutableArray arrayWithCapacity:0];
+        NSArray *array = [NSArray arrayWithContentsOfFile:orderPath];
+        [orderArray addObjectsFromArray:array];
+        
+        NSDictionary *dict = [self.currentOrder yy_modelToJSONObject];
+        [orderArray addObject:dict];
+        
+        [orderArray writeToFile:orderPath atomically:YES];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"order" object:nil];
+    }else{
+        [AppDel goLoginRootController];
+    }
     
-    NSDictionary *dict = [self.currentOrder yy_modelToJSONObject];
-    [orderArray addObject:dict];
     
-    [orderArray writeToFile:orderPath atomically:YES];
     
     
 }

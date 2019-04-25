@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginViewController : UIViewController
 
+@property (nonatomic ,strong) UITextField *phoneNumTF;
+@property (nonatomic, strong) UITextField *passwordTF;
 @end
 
 NS_ASSUME_NONNULL_END

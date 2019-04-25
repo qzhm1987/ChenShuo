@@ -28,12 +28,25 @@
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(order:) name:@"order" object:nil];
+    
     
     
     
     // Do any additional setup after loading the view.
 }
 
+-(void)order:(NSNotification *)noti{
+    NSString *orderPath = [KDoucumentPath stringByAppendingString:@"orders.plist"];
+    _dataList = [NSMutableArray arrayWithCapacity:0];
+    NSArray *array = [NSArray arrayWithContentsOfFile:orderPath];
+    [_dataList addObjectsFromArray:array];
+    [self.tableView reloadData];
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 #pragma UITableViewDelegate&&DataSource
 

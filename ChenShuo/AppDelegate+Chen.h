@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AppDelegate (Chen)<LLTabBarDelegate>
 
 
-
+-(void)goLoginRootController;
 -(void)goMainWindowRootController;
 -(void)commonTabBarRootController;
 -(void)AddButtonTabBarRootController;

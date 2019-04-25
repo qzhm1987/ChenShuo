@@ -10,7 +10,9 @@
 
 
 
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
+@end
 
 @implementation AppDelegate (Chen)
 
@@ -18,6 +20,14 @@
 -(void)showGuideScrollView{
      UIViewController *guide = [NSClassFromString(@"GuideViewController") new];
     self.window.rootViewController  = guide;
+}
+-(void)goLoginRootController{
+    UIViewController *login = [NSClassFromString(@"LoginViewController") new];
+    UINavigationController *loginNav = [[UINavigationController alloc]initWithRootViewController:login];
+    [[UINavigationBar appearance]  setTranslucent:NO];
+    [[UINavigationBar appearance]  setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [self.window setRootViewController:loginNav];
 }
 -(void)goMainWindowRootController{
     UIViewController *main = [NSClassFromString(@"MainViewController") new];
@@ -40,10 +50,6 @@
     second.view.backgroundColor = [UIColor whiteColor];
     second.navigationItem.title = @"订单";
     UINavigationController *secondNav = [[UINavigationController alloc]initWithRootViewController:second];
-    
-   
-    
-    
     UIViewController  *mine = [NSClassFromString(@"MineViewController") new];
     UINavigationController *mineNav  = [[UINavigationController alloc]initWithRootViewController:mine];
     mainNav.tabBarItem.title = @"首页";
@@ -66,7 +72,7 @@
     [[UINavigationBar appearance]  setTranslucent:NO];
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName :Theme_Color ,NSFontAttributeName : [UIFont systemFontOfSize:15.0]} forState:UIControlStateSelected];//TabBarItem选中时的字体颜色和大小
-    
+     tabBar.delegate = self;
     
    self.window.rootViewController = tabBar;
 }
@@ -117,7 +123,21 @@
     
 }
 
-
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    NSString *phone = [[NSUserDefaults standardUserDefaults] objectForKey:@"phone"];
+    if (tabBarController.selectedIndex==2) {
+        
+        if (phone==nil) {
+            UIViewController *login = [NSClassFromString(@"LoginViewController") new];
+            UINavigationController *loginNav = [[UINavigationController alloc]initWithRootViewController:login];
+            [self.window.rootViewController presentViewController:loginNav animated:YES completion:^{
+            }];
+        }
+    }
+    
+    
+    
+}
 
 
 

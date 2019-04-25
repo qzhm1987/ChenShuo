@@ -27,6 +27,9 @@
 		CB849889226F110A0031ED39 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB849888226F110A0031ED39 /* TableViewCell.m */; };
 		CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAAD61B226D6441006014AC /* LoginViewController.m */; };
 		CBDD318722713C3100EC9D0B /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD318622713C3100EC9D0B /* GuideViewController.m */; };
+		CBDD318A22715E6400EC9D0B /* IdeaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD318922715E6400EC9D0B /* IdeaViewController.m */; };
+		CBDD318D22715EA100EC9D0B /* QTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD318C22715EA100EC9D0B /* QTextView.m */; };
+		CBDD31932271834F00EC9D0B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD31902271834F00EC9D0B /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,12 @@
 		CBAAD61B226D6441006014AC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CBDD318522713C3100EC9D0B /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		CBDD318622713C3100EC9D0B /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		CBDD318822715E6400EC9D0B /* IdeaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdeaViewController.h; sourceTree = "<group>"; };
+		CBDD318922715E6400EC9D0B /* IdeaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdeaViewController.m; sourceTree = "<group>"; };
+		CBDD318B22715EA100EC9D0B /* QTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTextView.h; sourceTree = "<group>"; };
+		CBDD318C22715EA100EC9D0B /* QTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTextView.m; sourceTree = "<group>"; };
+		CBDD31902271834F00EC9D0B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		CBDD31912271834F00EC9D0B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		FE2F3DBC6F659E94F7B69BCE /* Pods-ChenShuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChenShuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChenShuo/Pods-ChenShuo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,8 +224,12 @@
 		CB005238226828BF00804B60 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				CBDD318B22715EA100EC9D0B /* QTextView.h */,
+				CBDD318C22715EA100EC9D0B /* QTextView.m */,
 				CB00524622684A3600804B60 /* MineViewController.h */,
 				CB00524722684A3600804B60 /* MineViewController.m */,
+				CBDD318822715E6400EC9D0B /* IdeaViewController.h */,
+				CBDD318922715E6400EC9D0B /* IdeaViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -268,6 +281,8 @@
 			children = (
 				CBAAD61A226D6441006014AC /* LoginViewController.h */,
 				CBAAD61B226D6441006014AC /* LoginViewController.m */,
+				CBDD31912271834F00EC9D0B /* RegisterViewController.h */,
+				CBDD31902271834F00EC9D0B /* RegisterViewController.m */,
 			);
 			path = "登录注册";
 			sourceTree = "<group>";
@@ -466,12 +481,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB0052112268269300804B60 /* main.m in Sources */,
+				CBDD318A22715E6400EC9D0B /* IdeaViewController.m in Sources */,
 				CB00525922687B7B00804B60 /* ShareUser.m in Sources */,
 				CBDD318722713C3100EC9D0B /* GuideViewController.m in Sources */,
 				CB00524E22684D7D00804B60 /* AppDelegate+Chen.m in Sources */,
 				CB005240226848F400804B60 /* LLTabBar.m in Sources */,
 				CBAAD61C226D6441006014AC /* LoginViewController.m in Sources */,
+				CBDD31932271834F00EC9D0B /* RegisterViewController.m in Sources */,
 				CB00525322687A9B00804B60 /* HTTPManager.m in Sources */,
+				CBDD318D22715EA100EC9D0B /* QTextView.m in Sources */,
 				CB849889226F110A0031ED39 /* TableViewCell.m in Sources */,
 				CB00523F226848F400804B60 /* LLTabBarItem.m in Sources */,
 				CB849885226F0F650031ED39 /* OrderViewController.m in Sources */,
