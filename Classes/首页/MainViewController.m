@@ -352,17 +352,17 @@
     if (phone) {
         [self.bgView removeFromSuperview];
         self.currentOrder.number = self.number;
-        
         self.currentOrder.addTime =[self getCurrentTimeStringWithFormatter:@"yyyy-MM-dd HH:mm:ss"];
-        NSString *orderPath = [KDoucumentPath stringByAppendingString:@"orders.plist"];
         NSMutableArray *orderArray = [NSMutableArray arrayWithCapacity:0];
-        NSArray *array = [NSArray arrayWithContentsOfFile:orderPath];
+        NSString *arraystring = [[NSUserDefaults standardUserDefaults] objectForKey:@"json"];
+        NSArray *array = [self jsonStringToArray:arraystring];
         [orderArray addObjectsFromArray:array];
-        
         NSDictionary *dict = [self.currentOrder yy_modelToJSONObject];
         [orderArray addObject:dict];
+        NSString *jsonString =[self arraryToJSONString:orderArray];
+        [userDefault setObject:jsonString forKey:@"json"];
+        NSLog(@"json = %@",jsonString);
         
-        [orderArray writeToFile:orderPath atomically:YES];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"order" object:nil];
     }else{
         [AppDel goLoginRootController];
@@ -433,6 +433,46 @@
         [_hotList addObjectsFromArray:array];
     }
     return _hotList;
+}
+
+-(NSString *)arraryToJSONString:(NSArray *)array {
+    NSData *data = [NSJSONSerialization dataWithJSONObject:array
+                                                   options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments
+                                                     error:nil];
+    
+    if (data == nil) {
+        return nil;
+    }
+    
+    NSString *string = [[NSString alloc] initWithData:data
+                                             encoding:NSUTF8StringEncoding];
+    return string;
+}
+-(NSArray *)jsonStringToArray:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *err;
+    
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:jsonData
+                      
+                                                     options:NSJSONReadingMutableContainers
+                      
+                                                       error:&err];
+    if(err) {
+        
+        NSLog(@"json解析失败：%@",err);
+        
+        return nil;
+        
+    }
+    
+    return array;
+    
+    
 }
 
 /*

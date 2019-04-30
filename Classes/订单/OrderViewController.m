@@ -37,9 +37,9 @@
 }
 
 -(void)order:(NSNotification *)noti{
-    NSString *orderPath = [KDoucumentPath stringByAppendingString:@"orders.plist"];
     _dataList = [NSMutableArray arrayWithCapacity:0];
-    NSArray *array = [NSArray arrayWithContentsOfFile:orderPath];
+    NSString *jsonString = [[NSUserDefaults standardUserDefaults] objectForKey:@"json"];
+    NSArray *array = [self jsonStringToArray:jsonString];
     [_dataList addObjectsFromArray:array];
     [self.tableView reloadData];
 }
@@ -144,7 +144,32 @@
     return _dataList;
 }
 
-
+-(NSArray *)jsonStringToArray:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *err;
+    
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:jsonData
+                      
+                                                     options:NSJSONReadingMutableContainers
+                      
+                                                       error:&err];
+    if(err) {
+        
+        NSLog(@"json解析失败：%@",err);
+        
+        return nil;
+        
+    }
+    
+    return array;
+    
+    
+}
 
 /*
 #pragma mark - Navigation

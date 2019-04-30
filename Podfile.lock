@@ -54,7 +54,7 @@ DEPENDENCIES:
   - YYModel (~> 1.0.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
@@ -90,4 +90,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: de0a5a8ff073eaa353b88b78c82fa09eef88ecc1
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1
